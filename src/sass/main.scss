@@ -1,0 +1,90 @@
+@import "./reset";
+
+.header {
+  p {
+    font-size: 12px;
+  }
+}
+
+.form {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  input {
+    width: 100%;
+    padding: 2px 9px;
+  }
+  input::placeholder {
+    font-style: italic;
+  }
+}
+
+/* User */
+.user {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  justify-items: center;
+
+  padding: 15px;
+  position: relative;
+  background-color: rgb(248, 248, 248);
+
+  img {
+    width: 400px;
+  }
+  .user-info {
+    justify-self: left;
+    a {
+      font-size: 12px;
+    }
+  }
+  /* Removing icon */
+  .fa.fa-trash-o {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    &:hover {
+      color: rgb(104, 104, 104);
+    }
+  }
+}
+
+/* button group with repos,follow */
+.button-gr {
+  text-align: center;
+  button,
+  a {
+    font-size: 12px;
+    margin: 2px;
+  }
+}
+
+/* alert */
+.alert {
+  margin-top: 10px;
+  padding: 10px;
+  p {
+    margin: 0;
+  }
+}
+
+/* Alert on Submit */
+.alert-submit {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  p {
+    margin: 0;
+  }
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 1000px) {
+  .user-info {
+    grid-row: 2;
+    justify-self: center;
+    text-align: justify;
+  }
+}

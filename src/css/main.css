@@ -1,0 +1,115 @@
+.container-fluid {
+  padding: 5px;
+}
+
+.header p {
+  font-size: 12px;
+}
+
+.form {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.form input {
+  width: 100%;
+  padding: 2px 9px;
+}
+
+.form input::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+.form input:-ms-input-placeholder {
+  font-style: italic;
+}
+
+.form input::-ms-input-placeholder {
+  font-style: italic;
+}
+
+.form input::placeholder {
+  font-style: italic;
+}
+
+/* User */
+.user {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(240px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  justify-items: center;
+  padding: 15px;
+  position: relative;
+  background-color: #f8f8f8;
+  /* Removing icon */
+}
+
+.user img {
+  width: 400px;
+}
+
+.user .user-info {
+  -ms-grid-column-align: left;
+      justify-self: left;
+}
+
+.user .user-info a {
+  font-size: 12px;
+}
+
+.user .fa.fa-trash-o {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.user .fa.fa-trash-o:hover {
+  color: #686868;
+}
+
+/* button group with repos,follow */
+.button-gr {
+  text-align: center;
+}
+
+.button-gr button,
+.button-gr a {
+  font-size: 12px;
+  margin: 2px;
+}
+
+/* alert */
+.alert {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.alert p {
+  margin: 0;
+}
+
+/* Alert on Submit */
+.alert-submit {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.alert-submit p {
+  margin: 0;
+}
+
+/* Media Query */
+@media only screen and (max-width: 1000px) {
+  .user-info {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    text-align: justify;
+  }
+}
+/*# sourceMappingURL=main.css.map */
